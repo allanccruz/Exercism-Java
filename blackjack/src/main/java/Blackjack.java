@@ -7,29 +7,17 @@ public class Blackjack {
         switch (card) {
 
             case "ace" -> cardvalue = 11;
-
             case "two" -> cardvalue = 2;
-
             case "three" -> cardvalue = 3;
-
             case "four" -> cardvalue = 4;
-
             case "five" -> cardvalue = 5;
-
             case "six" -> cardvalue = 6;
-
             case "seven" -> cardvalue = 7;
-
             case "eight" -> cardvalue = 8;
-
             case "nine" -> cardvalue = 9;
-
             case "ten" -> cardvalue = 10;
-
             case "jack" -> cardvalue = 10;
-
             case "queen" -> cardvalue = 10;
-
             case "king" -> cardvalue = 10;
 
         }
@@ -38,7 +26,7 @@ public class Blackjack {
     }
 
     public boolean isBlackjack(String card1, String card2) {
-        throw new UnsupportedOperationException("Please implement the Blackjack.isBlackjack method");
+        return parseCard(card1) + parseCard(card2) == 21;
     }
 
     public String largeHand(boolean isBlackjack, int dealerScore) {
