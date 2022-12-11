@@ -21,6 +21,10 @@ class SqueakyClean {
                 identifier = identifier.replace(identifier.charAt(i+1), Character.toUpperCase(identifier.charAt(i+1)));
             }
 
+            else if (!Character.isLetter(c)) {
+                str.append("");
+            }
+
             else {
                 str.append(c);
             }
