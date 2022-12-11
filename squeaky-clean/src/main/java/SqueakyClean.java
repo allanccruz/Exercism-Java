@@ -25,6 +25,10 @@ class SqueakyClean {
                 str.append("");
             }
 
+            else if (c >= 'α' && c <= 'ω') {
+                str.append("");
+            }
+
             else {
                 str.append(c);
             }
